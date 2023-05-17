@@ -10,8 +10,8 @@ Google SERPER API key: You can create this by visiting serper.dev.
 Running the Code
 Once you have the necessary API keys, you can run the code using Streamlit. If you haven't installed Streamlit, you can do so with pip install streamlit. Then, run the command:
 
-
-<streamlit run FinancialAdvisory.py> This will launch the Symply Finance application in your web browser.
+bash code
+streamlit run FinancialAdvisory.py This will launch the Symply Finance application in your web browser.
 
 Please note that the development of Symply Finance faced challenges with the utilization of web search APIs. Our future plans include migrating to Azure to utilize its compatibility with OpenAI and harmonize the search APIs. We also plan to integrate financial APIs for enhanced services.
 
