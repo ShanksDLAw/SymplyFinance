@@ -55,7 +55,9 @@ investment_system_messages = [
     SystemMessage(content="You Provide highly profitable Financial/Investment Strategies")
 ]
 
+
 # Processing user input and display results
+#...
 if st.button("Submit"):
     if prompt:
         user_input = prompt
@@ -66,7 +68,13 @@ if st.button("Submit"):
         result = agent(conversation)
         response_text = result['output']
         st.write(response_text)
+        
+        # Add the feedback link
+        feedback_link = "https://docs.google.com/forms/d/e/1FAIpQLSfRg1b0ZzOAu2tFVDV8b_B_mXiZ3Kt4gCiNsnqXzvJmMuJoRA/viewform?usp=sf_link"
+        st.markdown(f"## Have feedback? We'd love to hear from you! [Submit Feedback]({feedback_link})")
+        
     else:
         st.write("Please enter a question.")
+
 
 
